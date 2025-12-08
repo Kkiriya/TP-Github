@@ -1,30 +1,30 @@
 ### Commandes de base: 
-**Demarer:**
-`git init` --> Initialiser un nouveau repo
-`git status` --> voir l'etat actuel du repo
-`git add fichier.py` --> ajouter un fichier au repo
-`git add .` --> ajouter tous les fichiers au repo
+**Demarer:**<br>
+`git init` --> Initialiser un nouveau repo <br>
+`git status` --> voir l'etat actuel du repo<br>
+`git add fichier.py` --> ajouter un fichier au repo<br>
+`git add .` --> ajouter tous les fichiers au repo<br>
 
-**Sauvegarder:**
-`git commit -am "message"` --> creer un commit
-`git log` --> voir lhistorique de commit
-`git log --oneline` --> historique condenser
-`git diff` --> voir les modif apporter
+**Sauvegarder:**<br>
+`git commit -am "message"` --> creer un commit<br>
+`git log` --> voir lhistorique de commit<br>
+`git log --oneline` --> historique condenser<br>
+`git diff` --> voir les modif apporter<br>
 
 ### Manipuler les branches:
-**Creer et Naviguer:**
-`git branch` --> listes les branches
-`git banch nom-branche --> creer une branche
-`git checkout nom-branche` --> basculer sur la branche
-`git checkout -b nom-branche` --> creer et bascule la branche
+**Creer et Naviguer:**<br>
+`git branch` --> listes les branches<br>
+`git banch nom-branche` --> creer une branche<br>
+`git checkout nom-branche` --> basculer sur la branche<br>
+`git checkout -b nom-branche` --> creer et bascule la branche<br>
 
-**Fusionner et Supprimer:**
-`git checkout main` --> retourner sur main
-`git merge nom-branche` -->  fusionne dans main
-`git branch -d nom-branche` --> supprime la branche si fusionner
-`git branch -D nom-branche` --> force la suppression de la branche
+**Fusionner et Supprimer:**<br>
+`git checkout main` --> retourner sur main<br>
+`git merge nom-branche` -->  fusionne dans main<br>
+`git branch -d nom-branche` --> supprime la branche si fusionner<br>
+`git branch -D nom-branche` --> force la suppression de la branche<br>
 
-### Strategies de branches:
+### Strategies de branches:<br>
 
 | Git flow                             | Github flow                   |
 | ------------------------------------ | ----------------------------- |
@@ -37,16 +37,16 @@
 
 ### Github et Collab
 
-**Configuer un remote:**
-`git remote add origin [URL]` --> ajoute un remore nommer *origin*
-`git remote -v` --> voir les remotes configurer
-`git remote remove origin` --> supprime un remote
+**Configuer un remote:**<br>
+`git remote add origin [URL]` --> ajoute un remore nommer *origin*<br>
+`git remote -v` --> voir les remotes configurer<br>
+`git remote remove origin` --> supprime un remote<br>
 
-**Clone un Repo (pour collaboration ou simplement avoir les fichier)**
-`git clone [URL]` --> clone le repo et tous ses fichier
-`git clone [URL] .` --> clone le repo dans le repertoire courant sans creer un nouveau repertoire
+**Clone un Repo (pour collaboration ou simplement avoir les fichier)**<br>
+`git clone [URL]` --> clone le repo et tous ses fichier<br>
+`git clone [URL] .` --> clone le repo dans le repertoire courant sans creer un nouveau repertoire<br>
 
-**Synchroniser:**
-`git push -u origin main` --> envoyer + definir upstream (-u)
-`git pull origin main` --> recuper + fusionner
-`git fetch origin` --> recuperer sans fusionner
+**Synchroniser:**<br>
+`git push -u origin main` --> envoyer + definir upstream (-u)<br>
+`git pull origin main` --> recuper + fusionner<br>
+`git fetch origin` --> recuperer sans fusionner<br>
