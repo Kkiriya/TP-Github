@@ -1,3 +1,7 @@
+# Date: 2025-12-08
+# Auteur: Émile, Nadjib, Neil, Bruno
+# But: Créer ensemble un "menu du restaurant" en Python
+
 def afficher_entrees(): # Nadjib
     pass
 
