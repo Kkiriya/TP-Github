@@ -34,9 +34,9 @@
   - [ ] Crée le main() pour tout afficher
      
 ### Exercice 2 : Gestion de Bibliothèque Partagée
-- [ ] Implémente `ajouter_livre()` (par [Membre])
+- [ ] Implémente `ajouter_livre()` (par Émile)
 - [ ] Implémente `afficher_livres()` [Membre])
-- [ ] Implémente `rechercher_livre()` (par [Membre])
+- [ ] Implémente `rechercher_livre()` (par Bruno)
 - [ ] Crée les tests dans `test_bibliotheque.py` (par [Membre])
 
 ### Exercice 3 : Jeu du Pendu Collaboratif
