@@ -17,7 +17,7 @@ def afficher_entrees(): # Nadjib
 def afficher_plats_principaux(): # Neil
     pass
 
-# updated desserts
+# updated desserts, food
 def afficher_desserts(): # Bruno
     desserts = ["gateau fraise", "gateau chocolat", "gateau vanille"]
     for d in desserts:
