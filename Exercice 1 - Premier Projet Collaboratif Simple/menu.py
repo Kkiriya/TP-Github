@@ -18,7 +18,9 @@ def afficher_plats_principaux(): # Neil
     pass
 
 def afficher_desserts(): # Bruno
-    pass
+    desserts = ["gateau fraise", "gateau chocolat", "gateau vanille"]
+    for d in desserts:
+        print(d)
 
 # Chef de projet / Git Master: Émile
 
@@ -28,3 +30,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
