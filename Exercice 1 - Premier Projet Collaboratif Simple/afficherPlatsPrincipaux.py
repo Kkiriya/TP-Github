@@ -2,34 +2,24 @@
 # Auteur: Émile, Nadjib, Neil, Bruno
 # But: Créer ensemble un "menu du restaurant" en Python
 
-#----------------------Affiche les entrees du menu-----------------------------------------#
 def afficher_entrees(): # Nadjib
-    # Affiche la liste des entrées disponible dans le menu.
-    print("Voici la liste des entrées: \n")
-    entrees = [
-        "1. Salade niçoise",
-        "2. Soupe de tomate",
-        "3. Tomate mozzarella"
-    ]
-    for plat in entrees:
-        print(plat)
+    pass
 
 def afficher_plats_principaux(): # Neil
+    pass
     plats = [
         "Steak frites",
         "Pâtes carbonara",
         "Poulet grillé"
- ]
+    ]
 
     print("\n--- Plats Principaux ---")
     for plat in plats:
         print(f"- {plat}")
 
-# updated desserts, food
+
 def afficher_desserts(): # Bruno
-    desserts = ["gateau fraise", "gateau chocolat", "gateau vanille"]
-    for d in desserts:
-        print(d)
+    pass
 
 # Chef de projet / Git Master: Émile
 
@@ -39,5 +29,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
