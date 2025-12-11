@@ -21,7 +21,9 @@ def ajouter_livre(titre, auteur): # Émile
         print("Input invalide!")
 
 def afficher_livres():
-    pass
+    print("\n---Liste des livres disponible---\n")
+    for i, livre in enumerate(bibliotheque, start=1):
+        print(f"{i}. {livre['titre']} ({livre['auteur']})")
 
 def rechercher_livre(titre): # Bruno
     pass
