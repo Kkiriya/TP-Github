@@ -27,17 +27,19 @@ def sauvegarder_calcul(nom: "str", imc: "float") -> "str":
     :rtype: str
     """
     # path qui contien le fichier de sauvegarde pour chaque users
-    path = f"./.txt/{nom.strip().replace(" ", '-')}" # → ex: .txt/John-Bloodborne
+    dirPath = f"./.txt/{nom.strip().replace(" ", '-')}" # → ex: ./.txt/John-Bloodborne
 
     # makedirs lance une erreur si le fichier existe deja le try permet d'a la fois verifier si le fichier existe et de le creer sinon
     try:
-        os.makedirs(path)
+        os.makedirs(dirPath)
     except:
         pass
 
     date = datetime.datetime.now()
+    path = dirPath + (f"/historique-{nom.lower().title().strip().replace(" ", '')}.txt")
+    #full path → ex: ./.txt/John-Bloodborne/historique-JohnBloodborne.txt
     #Sauvegarde dans un fichier
-    with open(f"{path}/historique-{nom.lower().title().strip().replace(" ", '')}.txt", "a") as f:
+    with open(path, "a") as f:
         #le open cherche a append un fichier avec le nom/path fournit, si il n'existe pas il le cree
         historique = f"Date: {date.strftime("%x")};\tNom: {nom.strip().lower().title()};\tIMC: {imc}\n"
 
@@ -45,14 +47,31 @@ def sauvegarder_calcul(nom: "str", imc: "float") -> "str":
     return "Sauvegarder avec success!"
 
 
-def afficher_historiquqe():
+def afficher_historiquqe(nom: "str", doPrint: "bool" =True) -> "str":
+    historique = "" #permet de retourner l'historique en plus de l'imprimmer
+
     #Lit le fichier
-    pass
+    dirPath = f"./.txt/{nom.strip().replace(" ", '-')}" # → ex: ./.txt/John-Bloodborne
+    path = dirPath + (f"/historique-{nom.lower().title().strip().replace(" ", '')}.txt")
+    #full path → ex: ./.txt/John-Bloodborne/historique-JohnBloodborne.txt
+
+    #ouvre le fichier et le lit ligne par ligne
+    with open(path) as f:
+        for lines in f:
+            if doPrint:
+                print(lines)
+            historique += (lines + "\n")
+    if(not doPrint):
+        return historique
 
 def main():
     #test de la fonction
-    sauvegarder_calcul(NOM, IMC)
-    sauvegarder_calcul(NOM2, IMC2)
+    # sauvegarder_calcul(NOM, IMC)
+    # sauvegarder_calcul(NOM2, IMC2)
+    afficher_historiquqe(NOM)
+    print("-----------------")
+    print(afficher_historiquqe(NOM2, False))
+
 
 if __name__ == "__main__":
     main()
