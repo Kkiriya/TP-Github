@@ -35,21 +35,21 @@
      
 ### Exercice 2 : Gestion de Bibliothèque Partagée
 - [ ] Implémente `ajouter_livre()` (par Émile)
-- [ ] Implémente `afficher_livres()` [Membre])
+- [ ] Implémente `afficher_livres()` (par Nadjib)
 - [ ] Implémente `rechercher_livre()` (par Bruno)
-- [ ] Crée les tests dans `test_bibliotheque.py` (par [Membre])
+- [ ] Crée les tests dans `test_bibliotheque.py` (par Neil)
 
 ### Exercice 3 : Jeu du Pendu Collaboratif
-- [ ] Implémente `mots.py` (par [Membre])
-- [ ] Implémente `affichage.py` (par [Membre])
-- [ ] Implémente `jeu.py` (par [Membre])
-- [ ] Implémente `main.py` (par [Membre])
+- [ ] Implémente `mots.py` (par Neil)
+- [ ] Implémente `affichage.py` (par Bruno)
+- [ ] Implémente `jeu.py` (par Émile)
+- [ ] Implémente `main.py` (par Nadjib)
 
 ### Exercice 4 : Calculateur d'IMC avec Interface
-- [ ] Implémente `calcul.py` (par [Membre])
-- [ ] Implémente `interface.py` (par [Membre])
-- [ ] Implémente `historique.py` (par [Membre])
-- [ ] Implémente `main.py` (par [Membre])
+- [ ] Implémente `calcul.py` (par Nadjib)
+- [ ] Implémente `interface.py` (par Neil)
+- [ ] Implémente `historique.py` (par Émile)
+- [ ] Implémente `main.py` (par Bruno)
 
 ### Exercice 5 : Système de Tickets de Support
 - [ ] Implémente la structure [Everyone]
