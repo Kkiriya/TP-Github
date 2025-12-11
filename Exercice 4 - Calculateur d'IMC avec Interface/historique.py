@@ -48,6 +48,20 @@ def sauvegarder_calcul(nom: "str", imc: "float") -> "str":
 
 
 def afficher_historiquqe(nom: "str", doPrint: "bool" =True) -> "str":
+    """
+    ### Docstring for afficher_historiquqe
+    Permet d'afficher l'historique d'un user spécifique\n
+    Permet également de retourner l'historique en String\n
+    \n**doPrint** = *True* → On imprimme, pas de retour de String \n
+    **doPrint** = *False* → On n'imprime pas, retour de String
+
+    :param nom: String contenant le nom de l'utilisateur rechercher
+    :type nom: "str"
+    :param doPrint: Bool permetant d'activer/desactiver l'impression et de retourner un String a la place (si l'impression est desactiver)
+    :type doPrint: "bool"
+    :return: retourne l'historique de l'utilisateur en String
+    :rtype: str
+    """
     historique = "" #permet de retourner l'historique en plus de l'imprimmer
 
     #Lit le fichier
