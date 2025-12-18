@@ -3,3 +3,8 @@
 # But: Émile, Nadjib, Neil, Bruno
 
 print("Test - Conflit Github, Émile")
+
+print("Test 1 - Nadjib")
+print("Test 2 - Bruno")
+print("Test 3 - Neil")
+print("Test 4 - Maxence")
