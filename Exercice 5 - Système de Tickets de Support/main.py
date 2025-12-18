@@ -2,7 +2,7 @@
 # Auteur: Émile V
 # But: Émile, Nadjib, Neil, Bruno
 
-print("Test - Conflit Github, Émile")
+
 
 print("Test 1 - Nadjib")
 print("Test 2 - Bruno")
