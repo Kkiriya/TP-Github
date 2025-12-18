@@ -3,7 +3,7 @@
 # But: Émile, Nadjib, Neil, Bruno
 
 bruno-exercice-5
-print("Bienvenue dans le système de tickets de support.")
+print("Bienvenue dans le conflit.")
 
 
 
