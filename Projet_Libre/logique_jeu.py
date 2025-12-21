@@ -1,23 +1,18 @@
-def jouer(nombre_secret, max_tentatives, demander_nombre, comparer):
-    tentatives = 0
+import comparaison_nbr
+import user_input
 
-    while tentatives < max_tentatives:
-        print(f"Tentative {tentatives + 1} / {max_tentatives}")
+def jouer(NBR_SECRET: int, NBR_ESSAI_TOTAl: int, DEBUG_MODE: bool):
+    if DEBUG_MODE: print(f"Deviner le nombre secret ({NBR_SECRET}): ")
+    else: print(f"Deviner le nombre secret: ")
 
-        nombre_joueur = demander_nombre()
-        resultat = comparer(nombre_joueur, nombre_secret)
+    input = user_input.get_secret_number()
 
-        if resultat == "gagné":
-            print("Gagné !")
-            return
+    resultat = comparaison_nbr.comparer(NBR_SECRET, input)
 
-        elif resultat == "trop petit":
-            print("Trop petit")
-
-        elif resultat == "trop grand":
-            print("Trop grand")
-
-        tentatives += 1
-
-    print("Perdu ! Nombre maximum de tentatives atteint.")
-    print("Le nombre secret était :", nombre_secret)
+    match resultat:
+        case "Trop petit":
+            return False
+        case "Trop grand":
+            return False
+        case "Gagné":
+            return True
