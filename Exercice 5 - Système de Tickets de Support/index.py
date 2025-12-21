@@ -3,7 +3,7 @@
 #Modifier la meme ligne par les membres
 
 print("Membre 1 : fichier gestion.py ")
-print("Membre 2: interface.py")
+print("Membre 6: interface2.py")
 print("Membre 3: sauvegarde.py")
 print("Membre 4: ticket.py")
 print("Membre 5: main.py")
